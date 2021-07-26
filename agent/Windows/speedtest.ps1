@@ -288,7 +288,7 @@ if ($Success)
 			'Speedtest Server'
 			{
 				$xml += "<CHANNEL>" + $Title + "</CHANNEL>"
-				$xml += "<SPEED>N/A</SPEED>"
+				$xml += "<SPEED>0.0</SPEED>"
 				$xml += "<UNIT>" + ($result.server).name + " (" + ($result.server).location + " - " + ($result.server).country + ")" + "</UNIT>"
 			}
 			default { continue }
