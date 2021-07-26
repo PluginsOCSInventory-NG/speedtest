@@ -243,7 +243,7 @@ if ($Success)
 	
 	$xml = ""
 	
-	foreach ($Title in @('Download Speed', 'Upload Speed' , 'Latency', 'Jitter', 'Packet Loss'))
+	foreach ($Title in @('Download Speed', 'Upload Speed' , 'Latency', 'Jitter', 'Packet Loss', 'Speedtest Server'))
 	{
 		
 		$xml += "<SPEEDTEST>"
@@ -284,6 +284,12 @@ if ($Success)
 				$xml += "<CHANNEL>" + $Title + "</CHANNEL>"
 				$xml += "<SPEED>" + $Value + "</SPEED>"
 				$xml += "<UNIT>%</UNIT>"
+			}
+			'Speedtest Server'
+			{
+				$xml += "<CHANNEL>" + $Title + "</CHANNEL>"
+				$xml += "<SPEED>N/A</SPEED>"
+				$xml += "<UNIT>" + ($result.server).name + " (" + ($result.server).location + " - " + ($result.server).country + ")" + "</UNIT>"
 			}
 			default { continue }
 		}
