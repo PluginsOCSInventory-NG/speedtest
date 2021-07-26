@@ -1,4 +1,4 @@
 124585 Speedtest
 124586 Canal
 124587 Unité
-124588 Débit
+124588 Valeur
