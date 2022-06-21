@@ -32,7 +32,7 @@ if (!isset($protectedPost['SHOW'])) {
 }
 
 // form details and tab options
-$form_name = "example";
+$form_name = "speedtest_form";
 $table_name = $form_name;
 $tab_options = $protectedPost;
 $tab_options['form_name'] = $form_name;
